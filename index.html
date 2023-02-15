@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>IP Address Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+  crossorigin=""></script>
+</head>
+<body>
+  <div class="bannerContainer">
+    <p>IP Address Tracker</p>
+    <div class="searcherContainer">
+      <input id="searcher" type="text" value="" placeholder="Put your IP address">
+      <button id="send"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+  <div class="infoContainer">
+    <div class="box">
+      <div class="sections">
+        <p class="titles">Ip address</p>
+        <p id="ip" class="infoBold">???</p>
+      </div>
+      <div class="sections">
+        <p class="titles">Location</p>
+        <p id="location" class="infoBold">???</p>
+      </div>
+      <div class="sections">
+        <p class="titles">Timezone</p>
+        <p id="timezone" class="infoBold">???</p>
+      </div>
+      <div class="sections">
+        <p class="titles">Isp</p>
+        <p id="isp" class="infoBold">???</p>
+      </div>
+    </div>
+  </div>
+  <div id="map"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
